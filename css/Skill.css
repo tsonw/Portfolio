@@ -30,7 +30,7 @@ body > .content > .info > .text > .title {
 }
 
 body > .content > .info > .text > .projet {
-    margin-left: 1vw;
+    justify-self: end;
 }
 
 body > .content > .info > .text > .projet > a {
@@ -59,7 +59,7 @@ body > .content > .info > .text > .projet > a:active {
 
 body > .content > .info > .skill {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 body > .content > .info > .skill > .box {
