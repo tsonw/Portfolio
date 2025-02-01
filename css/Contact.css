@@ -1,0 +1,168 @@
+body > .content {
+    background-color: black;
+    height: 93vh;
+    color: white;
+}
+
+body > .content > .info {
+    display: flex;
+    flex-direction: column;
+    padding: 7vh 10vw 5vh 10vw;
+}
+
+body > .content > .info > .text > .title {
+    font-size: 3.5vh;
+    color: #a3ff22;
+    transition: color 0.6s ease-in-out;
+}
+
+body > .content > .info > .table {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #222628;
+    align-items: center;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px #a3ff22;
+    padding: 3vh 0vw 0vh 1vw;
+    margin-top: 3vh;
+}
+
+body > .content > .info > .table > .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+body > .content > .info > .table > .form > .contact {
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+body > .content > .info > .table > .form > .contact > .skill {
+    display: flex;
+    align-items: center;
+    color: #222628;
+    background-color: white;
+    border-radius: 100px;
+    height: 10vh;
+    margin-bottom: 3vh;
+}
+
+body > .content > .info > .table > .form > .contact > .skill > .icon {
+    background-color: #a3ff22;
+    border-radius: 100px;
+    height: 10vh;
+    width: 10vh;
+    transition: color 0.6s ease-in-out;
+}
+
+body > .content > .info > .table > .form > .contact > .skill > .icon > svg {
+    height: 10vh;
+    width: auto;
+    scale: 0.4;
+    color: black;
+    transition: color 0.6s ease-in-out;
+}
+
+body > .content > .info > .table > .form > .contact > .skill > .name {
+    position: relative;
+    left: 1vw;
+    font-size: 1.7vh;
+}
+
+body > .content > .info > .table > .form > .reseau {
+    padding-left: 5vh;
+    position: relative;
+    bottom: 1vh;
+}
+
+body > .content > .info > .table > .form > .reseau > a {
+    text-decoration: none;
+    width: auto;
+    height: 6vh;
+    color: white;
+}
+
+body > .content > .info > .table > .form > .reseau > a > svg {
+    color: #a3ff22;
+    width: auto;
+    height: 6vh;
+    margin-right: 5vh;
+    color: white;
+}
+
+body > .content > .info > .table > .form > .reseau > a > svg:hover {
+    width: auto;
+    scale: 0.9;
+    color: #a3ff22;
+}
+
+body > .content > .info > .table > .form > .reseau > a > svg:active {
+    scale: 0.9;
+    color: #a3ff22;
+    filter: drop-shadow(1px 1px 10px #ffffff);
+}
+
+body > .content > .info > .table > form {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+body > .content > .info > .table > form > .acc {
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 3vh 1vw;
+}
+
+body > .content > .info > .table > form > .acc > label {
+    color: #a3ff22;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+body > .content > .info > .table > form > .acc > input {
+    color: #000000;
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    height: 3vh;
+    padding-left: 1vw;
+    border-radius: 50px;
+}
+
+body > .content > .info > .table > form > .acc > button {
+    background-color: #a3ff22;
+    height: 5vh;
+    border-radius: 100px;
+    font-size: large;
+}
+
+body > .content > .info > .table > form > .acc > button:hover {
+    background-color: #7ad100;
+}
+
+body > .content > .info > .table > form > .acc > button:active {
+    background-color: #585858;
+    color: #a3ff22;
+    position: relative;
+    top: 2px;
+    box-shadow: 1px 1px 1px black;
+}
+
+body > .content > .info > .table > form > .message {
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 3vh 1vw;
+}
+
+body > .content > .info > .table > form > .message > label {
+    color: #a3ff22;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+body > .content > .info > .table > form > .message > textarea {
+    height: 15vh;
+    font-size: 2vh;
+    padding: 1vh;
+    border-radius: 10px;
+}

@@ -1,0 +1,68 @@
+body > .info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    height: 83vh;
+    padding-top: 10vh;
+}
+
+body > .info > .avatar {
+    border: 0.8vh solid #a3ff22;
+    border-radius: 100%;
+    height: 25vh;
+    transition: all 0.6s ease-in-out;
+}
+
+body > .info > .avatar > img {
+    height: 25vh;
+    border-radius: 100%;
+    filter: grayscale(80%);
+    transition: border-radius 0.5s ease-in-out;
+}
+
+body > .info > .text {
+    text-align: center;
+}
+
+body > .info > .text > h3 {
+    color: #a3ff22;
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    transition: all 0.5s ease-in-out;
+}
+
+body > .info > .text > h1 {
+    color: white;
+    font-size: 7vh;
+    transition: all 0.7s ease-in-out;
+}
+
+body > .info > .reseau {
+    display: flex;
+    padding-bottom: 15vh;
+    transition: all 1s ease-in-out;
+}
+
+body > .info > .reseau > a {
+    width: auto;
+    height: 6vh;
+    color: white;
+    margin: 0vw 1vw 0vw 1vw;
+}
+
+body > .info > .reseau > a > svg {
+    width: auto;
+    height: 6vh;
+    margin-right: 5vh;
+    color: white;
+}
+
+body > .info > .reseau > a > svg:hover {
+    width: auto;
+    height: 5.5vh;
+    color: #a3ff22;
+}
+

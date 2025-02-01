@@ -1,0 +1,60 @@
+body > .profile {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 93vh;
+    color: white;
+}
+
+body > .profile > .infomation {
+    padding: 15vh 10vw 15vh 10vw;
+}
+
+body > .profile > .infomation > .text > h1 {
+    font-size: 7vh;
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #a3ff22;
+    margin-bottom: 3vh;
+    transition: color 0.6s ease-in-out;
+}
+
+body > .profile > .infomation > .text > .present {
+    font-size: 5vh;
+    transition: all 0.6s ease-in-out;
+}
+
+body > .profile > .infomation > .text > .bio {
+    font-size: 3vh;
+    margin-top: 3vh;
+    line-height: 4vh;
+    transition: all 0.6s ease-in-out;
+}
+
+body > .profile > .infomation > .button {
+    margin-top: 5vh;
+}
+
+body > .profile > .infomation > .button > a > button {
+    color: black;
+    background-color: #a3ff22;
+    font-size: 4vh;
+    padding: 0.5vw 5vw 0.5vw 5vw;
+    border-radius: 1000px;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+body > .profile > .infomation > .button > a > button:hover {
+    background-color: #78cf00;
+    transition: all 0.5s ease-in;
+}
+
+body > .profile > .infomation > .button > a > button:active {
+    scale: 97%;
+    color: white;
+    background-color: #78cf00;
+    transition: all 0.1s ease-in;
+}
