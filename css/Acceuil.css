@@ -1,7 +1,6 @@
 body > .info {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
     background-color: black;
@@ -14,6 +13,7 @@ body > .info > .avatar {
     border-radius: 100%;
     height: 25vh;
     transition: all 0.6s ease-in-out;
+    margin-bottom: 3vh;
 }
 
 body > .info > .avatar > img {
@@ -25,6 +25,7 @@ body > .info > .avatar > img {
 
 body > .info > .text {
     text-align: center;
+    margin-bottom: 5vh;
 }
 
 body > .info > .text > h3 {
@@ -42,8 +43,8 @@ body > .info > .text > h1 {
 
 body > .info > .reseau {
     display: flex;
-    padding-bottom: 15vh;
     transition: all 1s ease-in-out;
+    margin-bottom: 8vh;
 }
 
 body > .info > .reseau > a {
@@ -58,11 +59,37 @@ body > .info > .reseau > a > svg {
     height: 6vh;
     margin-right: 5vh;
     color: white;
+    transition: scale 0.2s ease-out;
 }
 
 body > .info > .reseau > a > svg:hover {
-    width: auto;
-    height: 5.5vh;
     color: #a3ff22;
+    scale: 0.9;
 }
 
+body > .info > .reseau > a > svg:active {
+    position: relative;
+    top: 1px;
+    filter: drop-shadow(1px 1px 10px #ffffff);
+    transition: scale 0.1s ease-out;
+}
+
+body > .info > .plus {
+    background-color: #a3ff22;
+    padding: 1vh 3vw 1vh 3vw;
+    border-radius: 10px;
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+body > .info > .plus > a {
+    font-size: 4vh;
+    text-decoration: none;
+    color: black;
+}
+
+body > .info > .plus:hover {
+    background-color: #78cf00;
+    padding: 1vh 3vw 1vh 3vw;
+    border-radius: 100px;
+}
