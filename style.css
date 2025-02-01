@@ -54,6 +54,15 @@ header > nav > .navi > a:active {
     border: none;
     cursor: pointer;
     border-radius: 50px;
+    transition: all 0.5s ease-out;
+}
+
+.dropbtn:hover {
+    background-color: #87c431;
+}
+
+.dropbtn:active {
+    background-color: #5f8923;
 }
 
 .dropdown-content {
@@ -61,8 +70,9 @@ header > nav > .navi > a:active {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 100px;
-    border-radius: 5px;
     z-index: 1;
+    margin-top: 1vh;
+    border-radius: 10px;
 }
 
 .dropdown-content a {
@@ -73,7 +83,9 @@ header > nav > .navi > a:active {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    color: #8cff00;
+    background-color: #000000fd;
+    border-radius: 10px;
 }
 /** Header **/
 

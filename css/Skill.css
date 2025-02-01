@@ -41,25 +41,20 @@ body > .content > .info > .text > .projet > a {
     background-color: #a3ff22;
     border-radius: 1000px;
     text-decoration: none;
-    transition: color 1s ease-in-out;
+    transition: all 0.2s ease-out;
 }
 
 body > .content > .info > .text > .projet > a:hover {
-    font-size: 3.5vh;
-    color: black;
-    padding: 1vh 2vw 1vh 2vw;
     background-color: #5ea100;
-    border-radius: 1000px;
-    transition: all 0.5s ease-in;
 }
 
 body > .content > .info > .text > .projet > a:active {
-    font-size: 3vh;
+    position: relative;
+    top: 2px;
     color: white;
     padding: 1vh 2vw 1vh 2vw;
     background-color: #373737;
     border-radius: 1000px;
-    transition: all 0.1s ease-in;
 }
 
 body > .content > .info > .skill {
@@ -75,6 +70,7 @@ body > .content > .info > .skill > .box {
     padding: 1vh 1vw 1vh 1vw;
     border-radius: 20px;
     box-shadow: 0px 0px 3px #a3ff22;
+    transition: all 0.5s linear;
 }
 
 body > .content > .info > .skill > .box > .text {

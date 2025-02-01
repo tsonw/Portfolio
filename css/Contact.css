@@ -89,6 +89,7 @@ body > .content > .info > .table > .form > .reseau > a > svg {
     height: 6vh;
     margin-right: 5vh;
     color: white;
+    transition: scale 0.2s ease-out;
 }
 
 body > .content > .info > .table > .form > .reseau > a > svg:hover {
