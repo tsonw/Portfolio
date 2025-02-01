@@ -74,6 +74,7 @@ body > .content > .info > .table > .form > .reseau {
     padding-left: 5vh;
     position: relative;
     bottom: 1vh;
+    justify-self: center;
 }
 
 body > .content > .info > .table > .form > .reseau > a {
