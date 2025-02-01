@@ -12,15 +12,15 @@ body > .info > .avatar {
     border: 0.8vh solid #a3ff22;
     border-radius: 100%;
     height: 25vh;
-    transition: all 0.6s ease-in-out;
+    transition: border-radius 1s ease-in-out;
     margin-bottom: 3vh;
 }
 
 body > .info > .avatar > img {
     height: 25vh;
     border-radius: 100%;
-    filter: grayscale(80%);
-    transition: border-radius 0.5s ease-in-out;
+    filter: grayscale(40%);
+    transition: border-radius 1s ease-in-out;
 }
 
 body > .info > .text {
@@ -32,18 +32,18 @@ body > .info > .text > h3 {
     color: #a3ff22;
     font-size: 4vh;
     margin-bottom: 2vh;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.7s ease-in;
 }
 
 body > .info > .text > h1 {
     color: white;
     font-size: 7vh;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.8s ease-in;
 }
 
 body > .info > .reseau {
     display: flex;
-    transition: all 1s ease-in-out;
+    transition: all 0.9s ease-in;
     margin-bottom: 8vh;
 }
 
@@ -59,13 +59,15 @@ body > .info > .reseau > a > svg {
     height: 6vh;
     margin-right: 5vh;
     color: white;
-    transition: scale 0.2s ease-out;
+    transition: scale 0.9s ease-out;
 }
 
 body > .info > .reseau > a > svg:hover {
     color: #a3ff22;
     scale: 0.9;
 }
+
+
 
 body > .info > .reseau > a > svg:active {
     position: relative;
@@ -78,8 +80,9 @@ body > .info > .plus {
     background-color: #a3ff22;
     padding: 1vh 3vw 1vh 3vw;
     border-radius: 10px;
-    transition: all 1s ease-out;
+    transition: all 1.2s ease-out;
     opacity: 1;
+    animation: myAnimation 2s infinite alternate ease-in-out;
 }
 
 body > .info > .plus > a {
@@ -93,3 +96,12 @@ body > .info > .plus:hover {
     padding: 1vh 3vw 1vh 3vw;
     border-radius: 100px;
 }
+
+@keyframes myAnimation {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
