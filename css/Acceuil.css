@@ -4,7 +4,7 @@ body > .info {
     justify-items: center;
     align-items: center;
     background-color: black;
-    height: 83vh;
+    height: 84vh;
     padding-top: 10vh;
 }
 
@@ -99,9 +99,99 @@ body > .info > .plus:hover {
 
 @keyframes myAnimation {
     0% {
-      transform: translateY(-10px);
+      transform: translateY(-5px);
     }
     100% {
-      transform: translateY(10px);
+      transform: translateY(5px);
     }
-  }
+}
+
+/** Portable **/
+@media screen and (max-width: 870px) {
+    body > .info {
+        height: 86vh;
+        padding-top: 5vh;
+    }
+    
+    body > .info > .avatar {
+        height: 20vh;
+        margin-bottom: 3vh;
+    }
+    
+    body > .info > .avatar > img {
+        height: 20vh;
+    }
+    
+    body > .info > .text {
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+    
+    body > .info > .text > h3 {
+        color: #a3ff22;
+        font-size: 4vh;
+        margin-bottom: 4vh;
+    }
+    
+    body > .info > .text > h1 {
+        color: white;
+        font-size: 5vh;
+        margin: 0vw 5vw 0vw 5vw;
+        transition: all 0.8s ease-in;
+    }
+    
+    body > .info > .reseau {
+        display: flex;
+        transition: all 0.9s ease-in;
+        margin-bottom: 4vh;
+    }
+    
+    body > .info > .reseau > a {
+        width: auto;
+        height: 3vh;
+        color: white;
+        margin: 0vw 0vw 0vw 0vw;
+    }
+    
+    body > .info > .reseau > a > svg {
+        width: auto;
+        height: 3vh;
+        margin: 0vw 2vw 0vw 2vw;
+        color: white;
+        transition: scale 0.9s ease-out;
+    }
+    
+    body > .info > .reseau > a > svg:hover {
+        color: #a3ff22;
+        scale: 0.9;
+    }
+    
+    
+    body > .info > .reseau > a > svg:active {
+        position: relative;
+        top: 1px;
+        filter: drop-shadow(1px 1px 10px #ffffff);
+        transition: scale 0.1s ease-out;
+    }
+    
+    body > .info > .plus {
+        background-color: #a3ff22;
+        padding: 1vh 3vw 1vh 3vw;
+        border-radius: 10px;
+        transition: all 1.2s ease-out;
+        opacity: 1;
+        animation: myAnimation 2s infinite alternate ease-in-out;
+    }
+    
+    body > .info > .plus > a {
+        font-size: 3vh;
+        text-decoration: none;
+        color: black;
+    }
+    
+    body > .info > .plus:hover {
+        background-color: #78cf00;
+        padding: 1vh 3vw 1vh 3vw;
+        border-radius: 100px;
+    }
+}

@@ -25,7 +25,7 @@ header > nav > .logo > a > img {
     height: 4vh;
 }
 
-header > nav > .navi > a { 
+header > nav  > .navi > a {
     font-size: 18px;
     margin: 0.5vh 0.2vw;
     padding: 0.3vh 1vw 0.3vh 1vw; 
@@ -87,5 +87,91 @@ header > nav > .navi > a:active {
     background-color: #000000fd;
     border-radius: 10px;
 }
-/** Header **/
 
+
+
+/** Portable **/
+@media screen and (max-width: 870px) {
+    header > nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 1vh;
+        align-items: center;
+        justify-items: center;
+        height: 14vh;
+    }
+
+    header > nav > .lang {
+        justify-self: center;
+    }
+
+    header > nav > .logo > a > img {
+        mix-blend-mode: screen;
+        height: 4vh;
+    }
+    
+    header > nav  > .navi > a {
+        font-size: 18px;
+        margin: 0.5vh 0.2vw;
+        padding: 0.3vh 3vw 0.5vh 3vw; 
+        color: white;
+        background-color: #628931;
+        border: 1px solid white;
+        border-radius: 1000px;
+        text-decoration: none;
+    }
+    
+    header > nav > .navi > a:hover { 
+        background-color: #3e7100;
+    }
+    
+    header > nav > .navi > a:active {
+        color: black;
+        background-color: #8cff00;
+        scale: 90%;
+    }
+    
+    .dropbtn {
+        background-color: #3e7100;
+        color: white;
+        font-size: 18px;
+        padding: 0.3vh 3vw 0.5vh 3vw;  
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.5s ease-out;
+    }
+    
+    .dropbtn:hover {
+        background-color: #87c431;
+    }
+    
+    .dropbtn:active {
+        background-color: #5f8923;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        z-index: 1;
+        margin-top: 1vh;
+        border-radius: 10px;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        color: #8cff00;
+        background-color: #000000fd;
+        border-radius: 10px;
+    }
+    
+}
