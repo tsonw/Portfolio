@@ -1,76 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lexend:wght@700&family=Markazi+Text:wght@400..700&family=Oswald:wght@510&family=Tektur:wght@400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "Oswald", serif;
-    font-style: normal;
-    font-weight: 510;
+    font-family: "Tektur";
     font-optical-sizing: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/**
+    Trang : #E4E3E3
+    Xanh : #1D2532
+**/
+
+
 /** Header **/
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    z-index: 1;
+    border-bottom: solid 1px #ffffff;
+    box-shadow: 0px 5px 40px #1D2532;
+    background-color: #1D2532;
+}
 
 header > nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr;
-    padding: 1vh;
-    align-items: center;
+    grid-template-columns: 1fr 5fr 1fr;
     justify-items: center;
-    height: 5vh;
-}
-
-header > nav {
-    background-color: #87c431;
+    align-items: center;
+    background-color: #1D2532;
 }
 
 header > nav > .logo > a > img {
-    mix-blend-mode: screen;
-    height: 4vh;
+    height: 5vh;
+    margin: 1vh 0vw;
+    filter: drop-shadow(1px 0px 2px black);
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-header > nav  > .navi > a {
-    font-size: 18px;
-    margin: 0.5vh 0.2vw;
-    padding: 0.3vh 1vw 0.3vh 1vw; 
-    color: white;
-    background-color: #628931;
-    border: 1px solid white;
-    border-radius: 1000px;
+header > nav > .logo > a > img:hover {
+    scale: 1.1;
+}
+
+header > nav > .navi {
+    display: flex;
+}
+
+header > nav > .navi > a {
+    font-size: 2.5vh;
     text-decoration: none;
+    margin: 0vh 3vw;
+    padding: 1vh 1vw;
+    color: #E4E3E3;
+    position: relative;
+    display: block;
 }
 
-header > nav > .navi > a:hover { 
-    background-color: #3e7100;
+header > nav > .navi > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #E4E3E3;
+    transform: scaleX(0);
+    height: 2px;
+    width: 100%;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-header > nav > .navi > a:active {
-    color: black;
-    background-color: #8cff00;
-    scale: 90%;
+header > nav > .navi > a:hover {
+    color: #ffffff;
 }
+
+header > nav > .navi > a:hover::after {
+    font-weight: bold;
+    transform: scaleX(1);
+}
+
 
 .dropbtn {
-    background-color: #3e7100;
-    color: white;
+    background-color: #E4E3E3;
+    width: 8vw;
+    color: #1D2532;
     font-size: 18px;
     padding: 0.3vh 1vw 0.3vh 1vw; 
     border: none;
     cursor: pointer;
     border-radius: 50px;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .dropbtn:hover {
-    background-color: #87c431;
+    background-color: #ffffff;
 }
 
 .dropbtn:active {
-    background-color: #5f8923;
+    background-color: #1D2532;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    width: 8vw;
+    justify-items: center;
+    background-color: #ffffff;
     min-width: 100px;
     z-index: 1;
     margin-top: 1vh;
@@ -79,101 +118,16 @@ header > nav > .navi > a:active {
 
 .dropdown-content a {
     color: black;
-    padding: 10px;
+    padding: 1vh 1vw;
     text-decoration: none;
     display: block;
+    justify-items: center;
+    transition: all 0.2s ease-in-out;
 }
 
 .dropdown-content a:hover {
-    color: #8cff00;
-    background-color: #000000fd;
+    color: #E4E3E3;
+    background-color: #1D2532;
+    width: 7vw;
     border-radius: 10px;
-}
-
-
-
-/** Portable **/
-@media screen and (max-width: 870px) {
-    header > nav {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 1vh;
-        align-items: center;
-        justify-items: center;
-        height: 14vh;
-    }
-
-    header > nav > .lang {
-        justify-self: center;
-    }
-
-    header > nav > .logo > a > img {
-        mix-blend-mode: screen;
-        height: 4vh;
-    }
-    
-    header > nav  > .navi > a {
-        font-size: 18px;
-        margin: 0.5vh 0.2vw;
-        padding: 0.3vh 3vw 0.5vh 3vw; 
-        color: white;
-        background-color: #628931;
-        border: 1px solid white;
-        border-radius: 1000px;
-        text-decoration: none;
-    }
-    
-    header > nav > .navi > a:hover { 
-        background-color: #3e7100;
-    }
-    
-    header > nav > .navi > a:active {
-        color: black;
-        background-color: #8cff00;
-        scale: 90%;
-    }
-    
-    .dropbtn {
-        background-color: #3e7100;
-        color: white;
-        font-size: 18px;
-        padding: 0.3vh 3vw 0.5vh 3vw;  
-        border: none;
-        cursor: pointer;
-        border-radius: 50px;
-        transition: all 0.5s ease-out;
-    }
-    
-    .dropbtn:hover {
-        background-color: #87c431;
-    }
-    
-    .dropbtn:active {
-        background-color: #5f8923;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 100px;
-        z-index: 1;
-        margin-top: 1vh;
-        border-radius: 10px;
-    }
-    
-    .dropdown-content a {
-        color: black;
-        padding: 10px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    .dropdown-content a:hover {
-        color: #8cff00;
-        background-color: #000000fd;
-        border-radius: 10px;
-    }
-    
 }
