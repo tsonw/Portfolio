@@ -27,15 +27,15 @@
                 </a>
             </div>
             <div class="navi">
-                <a class="page" href="#about">À propos</a>
-                <a class="page" href="#skill">Compétences</a>
+                <a class="page" href="#about">About</a>
+                <a class="page" href="#skill">Skills</a>
                 <a class="page" href="#contact">Contact</a>
             </div>
             <div class="lang">
-                <button class="dropbtn" onclick="toggleDropdown()">Langue</button>
+                <button class="dropbtn" onclick="toggleDropdown()">Language</button>
                 <div class="dropdown-content" id="dropdownMenu">
-                    <a href="#">français</a>
-                    <a href="english.html">english</a>
+                    <a href="index.html">français</a>
+                    <a href="#">english</a>
                     <a href="tiengviet.html">tiếng việt</a>
                 </div>
             </div>
@@ -47,9 +47,9 @@
                 <img src="./image/avatar2.jpg" alt="avatar">
             </div>
             <div class="text">
-                <h3>Bonjour à tous !</h3>
-                <h1>Je suis <i>THAI SON</i> ,</h1>
-                <h2>Ingénieur en cybersécurité</h2>
+                <h3>Hello everyone !</h3>
+                <h1>I am <i>THAI SON</i> ,</h1>
+                <h2>Cybersecurity engineer</h2>
                 <div class="reseau">
                     <a href="https://github.com/tsonw">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -88,7 +88,7 @@
                     </a>
                 </div>
                 <div class="plus">
-                    <a href="#about">En savoir plus</a>
+                    <a href="#about">learn more</a>
                 </div>
             </div>
         </div>
@@ -100,20 +100,15 @@
             </video>
             <div class="infomation">
                 <div class="text">
-                    <h1><b>À propos</b></h1>
-                    <p class="present">Étudiant en première année de BUT Informatique</p>
-                    <p class="present">à<i> l'IUT d'Orsay</i></p>
-                    <p class="bio">Je suis originaire du Vietnam et passionné par la programmation, en particulier la
-                        cybersécurité. Curieux et motivé, j’explore en permanence de nouvelles technologies afin de
-                        renforcer mes compétences techniques et mieux comprendre les systèmes informatiques. <br>Mon
-                        objectif est non seulement de progresser dans ce domaine exigeant, mais aussi d’inspirer les
-                        autres à découvrir le plaisir du code. Je suis à la recherche d’opportunités pour appliquer mes
-                        connaissances, collaborer sur des projets concrets et évoluer dans un environnement stimulant.
+                    <h1><b>About</b></h1>
+                    <p class="present">I am a first year student of computer science</p>
+                    <p class="present">at<i> IUT d'Orsay</i></p>
+                    <p class="bio">I'm originally from Vietnam and passionate about programming, especially cybersecurity. Curious and motivated, I'm constantly exploring new technologies to strengthen my technical skills and better understand computer systems. My goal is not only to advance in this demanding field, but also to inspire others to discover the joy of coding. I'm looking for opportunities to apply my knowledge, collaborate on real-world projects, and thrive in a stimulating environment.
                     </p>
                 </div>
                 <div class="button">
                     <a href="./image/CVThaiSon.pdf" download>
-                        <button>Cliquez ici pour télécharger mon CV</button>
+                        <button>Click here to download my CV</button>
                     </a>
                 </div>
             </div>
@@ -124,10 +119,10 @@
             <div class="info">
                 <div class="text">
                     <div class="title">
-                        <h1>Compétences</h1>
+                        <h1>Skills</h1>
                     </div>
                     <div class="projet">
-                        <a href="projetFR.html">Projet réalisé</a>
+                        <a href="Projet.html">Personal project</a>
                     </div>
                 </div>
                 <div class="skill">
@@ -160,7 +155,7 @@
                     </div>
                     <div class="box">
                         <div class="text">
-                            <h1>Programmation</h1>
+                            <h1>Programming</h1>
                         </div>
                         <div class="outil">
                             <div class="skill">
@@ -216,7 +211,7 @@
                     </div>
                     <div class="box">
                         <div class="text">
-                            <h1>Bases de données</h1>
+                            <h1>Databases</h1>
                         </div>
                         <div class="outil">
                             <div class="skill">
@@ -255,7 +250,7 @@
                     </div>
                     <div class="box">
                         <div class="text">
-                            <h1>Outils de conception</h1>
+                            <h1>Design tools</h1>
                         </div>
                         <div class="outil">
                             <div class="skill">
@@ -288,7 +283,7 @@
                     </div>
                     <div class="box">
                         <div class="text">
-                            <h1>Autres outils</h1>
+                            <h1>Other tools</h1>
                         </div>
                         <div class="outil">
                             <div class="skill">
@@ -380,7 +375,7 @@
                     </div>
                     <div class="box">
                         <div class="text">
-                            <h1>Systèmes d’exploitation</h1>
+                            <h1>Operating systems</h1>
                         </div>
                         <div class="outil">
                             <div class="skill">
@@ -497,19 +492,17 @@
                     </div>
                 </div>
                 <div class="table">
-                    <form action="./php/send.php" method="POST">
+                    <form action="#">
                         <div class="acc">
-                            <label for="name">Nom et prénom</label>
-                            <input type="text" name="name" required>
-
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" name="name" required />
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" required>
-
-                            <button type="submit">Envoyer</button>
+                            <input type="email" name="email" id="email" required />
+                            <button type="submit">Send</button>
                         </div>
                         <div class="message">
                             <label for="message">Message</label>
-                            <textarea name="message" placeholder="Poser des questions"></textarea><br>
+                            <textarea name="message" id="message" placeholder="Poser des questions"></textarea><br>
                         </div>
                     </form>
                 </div>

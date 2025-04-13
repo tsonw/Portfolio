@@ -12,3 +12,14 @@ window.onclick = function(event) {
         }
     }
 }
+
+function openFullscreen(div) {
+    const overlay = document.getElementById('overlay');
+    const fullscreenImg = document.getElementById('fullscreenImg');
+    fullscreenImg.src = img.src;
+    overlay.style.display = 'flex';
+  }
+  
+  function closeFullscreen() {
+    document.getElementById('overlay').style.display = 'none';
+  }
