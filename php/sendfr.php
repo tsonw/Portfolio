@@ -10,9 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $email";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Đã gửi thành công!";
+        echo "Envoyé avec succès!";
     } else {
-        echo "Gửi thất bại.";
+        echo "L'envoi a échoué.";
     }
 }
 ?>
