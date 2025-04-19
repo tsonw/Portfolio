@@ -1,6 +1,11 @@
+#contact {
+    height: 100vh;
+}
+
 #contact > .content {
     background-color: #E4E3E3;
-    height: 93vh;
+    height: 100vh;
+    padding-top: 5vh;
     color: white;
 }
 
@@ -30,7 +35,7 @@
 
 #contact > .content > .info > .table > .form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     align-items: center;
 }
 
@@ -44,30 +49,31 @@
     color: #1D2532;
     background-color: white;
     border-radius: 100px;
-    height: 10vh;
+    height: 7vw;
     margin-bottom: 3vh;
 }
 
 #contact > .content > .info > .table > .form > .contact > .skill > .icon {
     background-color: #E4E3E3;
     border-radius: 100px;
-    height: 10vh;
-    width: 10vh;
+    height: 7vw;
+    width: 7vw;
     transition: color 0.6s ease-in-out;
 }
 
 #contact > .content > .info > .table > .form > .contact > .skill > .icon > svg {
-    height: 10vh;
+    height: 7vw;
     width: auto;
     scale: 0.4;
-    color: 1D2532;
+    color: #1D2532;
     transition: color 0.6s ease-in-out;
 }
 
 #contact > .content > .info > .table > .form > .contact > .skill > .name {
     position: relative;
+    width: fit-content;
     left: 1vw;
-    font-size: 1.7vh;
+    font-size: 0.6vw;
 }
 
 #contact > .content > .info > .table > .form > .reseau {
@@ -169,135 +175,139 @@
 }
 
 /** Portable **/
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
+    #contact {
+        height: 100vh;
+    }
+    
     #contact > .content {
-        background-color: black;
-        height: auto;
+        background-color: #E4E3E3;
+        height: 100vh;
+        padding-top: 5vh;
         color: white;
     }
     
-    body > .content > .info {
+    #contact > .content > .info {
         display: flex;
         flex-direction: column;
-        padding: 3vh 10vw 5vh 10vw;
+        padding: 7vh 10vw 5vh 10vw;
     }
     
-    body > .content > .info > .text > .title {
-        color: #a3ff22;
+    #contact > .content > .info > .text > .title {
+        font-size: 3.5vh;
+        color: #1D2532;
         transition: color 0.6s ease-in-out;
     }
-
-    body > .content > .info > .text > .title > h1 {
-        font-size: 4vh;
-    }
-
-    body > .content > .info > .table {
+    
+    #contact > .content > .info > .table {
         display: grid;
         grid-template-columns: 1fr;
         background-color: #222628;
         align-items: center;
         height: auto;
         border-radius: 20px;
-        box-shadow: 0px 0px 3px #a3ff22;
-        padding: 1vh 5vw 1vh 5vw;
+        box-shadow: 0px 0px 3px #1D2532;
+        padding: 3vh 0vw 0vh 1vw;
         margin-top: 3vh;
     }
     
-    body > .content > .info > .table > .form {
+    #contact > .content > .info > .table > .form {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
     }
     
-    body > .content > .info > .table > .form > .contact {
+    #contact > .content > .info > .table > .form > .contact {
         padding: 1vh 1vw 1vh 1vw;
+        margin-bottom: 1vh;
     }
     
-    body > .content > .info > .table > .form > .contact > .skill {
+    #contact > .content > .info > .table > .form > .contact > .skill {
         display: flex;
         align-items: center;
-        color: #222628;
+        color: #1D2532;
         background-color: white;
         border-radius: 100px;
-        height: 5vh;
+        height: 7vw;
         margin-bottom: 3vh;
     }
     
-    body > .content > .info > .table > .form > .contact > .skill > .icon {
-        background-color: #a3ff22;
+    #contact > .content > .info > .table > .form > .contact > .skill > .icon {
+        background-color: #E4E3E3;
         border-radius: 100px;
-        height: 5vh;
-        width: 5vh;
+        height: 7vw;
+        width: 7vw;
         transition: color 0.6s ease-in-out;
     }
     
-    body > .content > .info > .table > .form > .contact > .skill > .icon > svg {
-        height: 5vh;
+    #contact > .content > .info > .table > .form > .contact > .skill > .icon > svg {
+        height: 7vw;
         width: auto;
         scale: 0.4;
-        color: black;
+        color: #1D2532;
         transition: color 0.6s ease-in-out;
     }
     
-    body > .content > .info > .table > .form > .contact > .skill > .name {
+    #contact > .content > .info > .table > .form > .contact > .skill > .name {
         position: relative;
+        width: fit-content;
         left: 1vw;
-        font-size: 1.8vw;
+        font-size: 1vw;
     }
     
-    body > .content > .info > .table > .form > .reseau {
-        padding-left: 1vh;
+    #contact > .content > .info > .table > .form > .reseau {
+        padding-left: 6vw;
         position: relative;
         bottom: 1vh;
         justify-self: center;
+        margin-bottom: 2vh;
     }
     
-    body > .content > .info > .table > .form > .reseau > a {
+    #contact > .content > .info > .table > .form > .reseau > a {
         text-decoration: none;
         width: auto;
-        height: 3vh;
-        color: white;
+        height: 6vh;
+        color: #E4E3E3;
     }
     
-    body > .content > .info > .table > .form > .reseau > a > svg {
-        color: #a3ff22;
+    #contact > .content > .info > .table > .form > .reseau > a > svg {
         width: auto;
-        height: 3vh;
-        margin: 1vh;
-        color: white;
+        height: 6vh;
+        margin-right: 5vh;
+        color: #E4E3E3;
         transition: scale 0.2s ease-out;
     }
     
-    body > .content > .info > .table > .form > .reseau > a > svg:hover {
+    #contact > .content > .info > .table > .form > .reseau > a > svg:hover {
         width: auto;
         scale: 0.9;
-        color: #a3ff22;
+        color: #ffffff;
     }
     
-    body > .content > .info > .table > .form > .reseau > a > svg:active {
+    #contact > .content > .info > .table > .form > .reseau > a > svg:active {
         scale: 0.9;
-        color: #a3ff22;
-        filter: drop-shadow(1px 1px 10px #ffffff);
+        color: #E4E3E3;
+        filter: drop-shadow(1px 1px 5px #ffffff);
     }
     
-    body > .content > .info > .table > form {
+    #contact > .content > .info > .table > form {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 4fr;
     }
     
-    body > .content > .info > .table > form > .acc {
+    #contact > .content > .info > .table > form > .acc {
         display: flex;
         flex-direction: column;
         padding: 0vh 1vw 3vh 1vw;
     }
     
-    body > .content > .info > .table > form > .acc > label {
-        color: #a3ff22;
+    #contact > .content > .info > .table > form > .acc > label {
+        color: #E4E3E3;
         font-size: 3vh;
         margin-bottom: 1vh;
     }
     
-    body > .content > .info > .table > form > .acc > input {
+    #contact > .content > .info > .table > form > .acc > input {
         color: #000000;
         font-size: 2vh;
         margin-bottom: 1vh;
@@ -306,41 +316,225 @@
         border-radius: 50px;
     }
     
-    body > .content > .info > .table > form > .acc > button {
-        background-color: #a3ff22;
+    #contact > .content > .info > .table > form > .acc > button {
+        background-color: #E4E3E3;
         height: 5vh;
         border-radius: 100px;
         font-size: large;
     }
     
-    body > .content > .info > .table > form > .acc > button:hover {
-        background-color: #7ad100;
+    #contact > .content > .info > .table > form > .acc > button:hover {
+        background-color: #ffffff;
     }
     
-    body > .content > .info > .table > form > .acc > button:active {
+    #contact > .content > .info > .table > form > .acc > button:active {
         background-color: #585858;
-        color: #a3ff22;
+        color: #E4E3E3;
         position: relative;
         top: 2px;
         box-shadow: 1px 1px 1px black;
     }
     
-    body > .content > .info > .table > form > .message {
+    #contact > .content > .info > .table > form > .message {
         display: flex;
         flex-direction: column;
         padding: 0vh 1vw 3vh 1vw;
     }
     
-    body > .content > .info > .table > form > .message > label {
-        color: #a3ff22;
+    #contact > .content > .info > .table > form > .message > label {
+        color: #E4E3E3;
         font-size: 3vh;
         margin-bottom: 1vh;
     }
     
-    body > .content > .info > .table > form > .message > textarea {
+    #contact > .content > .info > .table > form > .message > textarea {
         height: 15vh;
-        font-size: 2vh;
+        font-size: 3vh;
         padding: 1vh;
         border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #contact {
+        height: 100vh;
+    }
+    
+    #contact > .content {
+        background-color: #E4E3E3;
+        height: 100vh;
+        padding-top: 8vh;
+        color: white;
+    }
+    
+    #contact > .content > .info {
+        display: flex;
+        flex-direction: column;
+        padding: 7vh 10vw 5vh 10vw;
+    }
+    
+    #contact > .content > .info > .text > .title {
+        font-size: 3.5vw;
+        color: #1D2532;
+        transition: color 0.6s ease-in-out;
+    }
+    
+    #contact > .content > .info > .table {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #222628;
+        align-items: center;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0px 0px 3px #1D2532;
+        padding: 3vh 0vw 0vh 1vw;
+        margin-top: 3vh;
+    }
+    
+    #contact > .content > .info > .table > .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    
+    #contact > .content > .info > .table > .form > .contact {
+        padding: 1vh 1vw 1vh 1vw;
+        margin-bottom: 1vh;
+    }
+    
+    #contact > .content > .info > .table > .form > .contact > .skill {
+        display: flex;
+        align-items: center;
+        color: #1D2532;
+        background-color: white;
+        border-radius: 100px;
+        height: 7vw;
+        margin-bottom: 3vh;
+    }
+    
+    #contact > .content > .info > .table > .form > .contact > .skill > .icon {
+        background-color: #E4E3E3;
+        border-radius: 100px;
+        height: 7vw;
+        width: 7vw;
+        transition: color 0.6s ease-in-out;
+    }
+    
+    #contact > .content > .info > .table > .form > .contact > .skill > .icon > svg {
+        height: 7vw;
+        width: auto;
+        scale: 0.4;
+        color: #1D2532;
+        transition: color 0.6s ease-in-out;
+    }
+    
+    #contact > .content > .info > .table > .form > .contact > .skill > .name {
+        position: relative;
+        width: fit-content;
+        left: 1vw;
+        font-size: 1vw;
+    }
+    
+    #contact > .content > .info > .table > .form > .reseau {
+        padding-left: 6vw;
+        position: relative;
+        bottom: 1vh;
+        justify-self: center;
+        margin-bottom: 2vh;
+    }
+    
+    #contact > .content > .info > .table > .form > .reseau > a {
+        text-decoration: none;
+        width: auto;
+        height: 5vw;
+        color: #E4E3E3;
+    }
+    
+    #contact > .content > .info > .table > .form > .reseau > a > svg {
+        width: auto;
+        height: 5vw;
+        margin-right: 5vh;
+        color: #E4E3E3;
+        transition: scale 0.2s ease-out;
+    }
+    
+    #contact > .content > .info > .table > .form > .reseau > a > svg:hover {
+        width: auto;
+        scale: 0.9;
+        color: #ffffff;
+    }
+    
+    #contact > .content > .info > .table > .form > .reseau > a > svg:active {
+        scale: 0.9;
+        color: #E4E3E3;
+        filter: drop-shadow(1px 1px 5px #ffffff);
+    }
+    
+    #contact > .content > .info > .table > form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #contact > .content > .info > .table > form > .acc {
+        display: flex;
+        flex-direction: column;
+        padding: 0vh 1vw 3vh 1vw;
+    }
+    
+    #contact > .content > .info > .table > form > .acc > label {
+        color: #E4E3E3;
+        font-size: 3vw;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    
+    #contact > .content > .info > .table > form > .acc > input {
+        color: #000000;
+        font-size: 2vw;
+        margin-bottom: 1vh;
+        height: 3vh;
+        padding-left: 1vw;
+        border-radius: 50px;
+    }
+    
+    #contact > .content > .info > .table > form > .acc > button {
+        background-color: #E4E3E3;
+        height: 5vw;
+        border-radius: 100px;
+        font-size: 3vw;
+    }
+    
+    #contact > .content > .info > .table > form > .acc > button:hover {
+        background-color: #ffffff;
+    }
+    
+    #contact > .content > .info > .table > form > .acc > button:active {
+        background-color: #585858;
+        color: #E4E3E3;
+        position: relative;
+        top: 2px;
+        box-shadow: 1px 1px 1px black;
+    }
+    
+    #contact > .content > .info > .table > form > .message {
+        display: flex;
+        flex-direction: column;
+        padding: 0vh 1vw 3vh 1vw;
+    }
+    
+    #contact > .content > .info > .table > form > .message > label {
+        color: #E4E3E3;
+        font-size: 2vh;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    
+    #contact > .content > .info > .table > form > .message > textarea {
+        height: fit-content;
+        width: 70vw;
+        font-size: 2vw;
+        padding: 1vh;
+        border-radius: 10px;
+        align-self: center;
     }
 }

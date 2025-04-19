@@ -6,7 +6,7 @@
 #skill > .content > .info {
     display: flex;
     flex-direction: column;
-    padding: 15vh 10vw 5vh 10vw;
+    padding: 12vh 10vw 5vh 10vw;
 }
 
 #skill > .content > .info > .text {
@@ -18,7 +18,7 @@
 }
 
 #skill > .content > .info > .text > .title {
-    font-size: 3.5vh;
+    font-size: 2vw;
     color: #1D2532;
     transition: color 0.6s ease-in-out;
     margin-bottom: 1vh;
@@ -29,7 +29,7 @@
 }
 
 #skill > .content > .info > .text > .projet > a {
-    font-size: 3.5vh;
+    font-size: 2vw;
     font-style: italic;
     color: #E4E3E3;
     padding: 1vh 2vw 1vh 2vw;
@@ -116,9 +116,253 @@
 #skill > .content > .info > .skill > .box > .outil > .skill > .name {
     position: relative;
     left: 1vw;
+    font-size: 0.95vw;
 }
 
-/** Portable **/
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
+    #skill > .content {
+        background-color: #E4E3E3;
+        height: fit-content;
+    }
     
+    #skill > .content > .info {
+        display: flex;
+        flex-direction: column;
+        padding: 12vh 10vw 5vh 10vw;
+    }
+    
+    #skill > .content > .info > .text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 0vh 1vw 1vh 1vw;
+        padding: 0vh 1vw 1vh 0vw;
+    }
+    
+    #skill > .content > .info > .text > .title {
+        font-size: 2vw;
+        color: #1D2532;
+        transition: color 0.6s ease-in-out;
+        margin-bottom: 1vh;
+    }
+    
+    #skill > .content > .info > .text > .projet {
+        justify-self: end;
+    }
+    
+    #skill > .content > .info > .text > .projet > a {
+        font-size: 2vw;
+        font-style: italic;
+        color: #E4E3E3;
+        padding: 1vh 2vw 1vh 2vw;
+        background-color: #1D2532;
+        box-shadow: 0px 5px 0px #afb2b7;
+        border-radius: 1000px;
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+    }
+    
+    #skill > .content > .info > .text > .projet > a:hover {
+        background-color: #E4E3E3;
+        border: solid 1px #1D2532;
+        color: #1D2532;
+    }
+    
+    #skill > .content > .info > .text > .projet > a:active {
+        position: relative;
+        top: 2px;
+        color: white;
+        background-color: #373737;
+        box-shadow: 0px 3px 0px #afb2b7;
+    }
+    
+    #skill > .content > .info > .skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #skill > .content > .info > .skill > .box {
+        display: flex;
+        flex-direction: column;
+        background-color: #E4E3E3;
+        border: solid 2px #1D2532;
+        box-shadow: 0px 0px 1px #1D2532;
+        margin: 1vh;
+        padding: 1vh 1vw 1vh 1vw;
+        border-radius: 20px;
+        transition: all 0.5s linear;
+    }
+    
+    #skill > .content > .info > .skill > .box:hover {
+        border: solid 2px #E4E3E3;
+        box-shadow: 0px 0px 10px #1D2532;
+    }
+    
+    #skill > .content > .info > .skill > .box > .text {
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil {
+        padding-bottom: 2vh;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil > .skill {
+        display: flex;
+        align-items: center;
+        color: #E4E3E3;
+        background-color: #1D2532;
+        border-radius: 100px;
+        height: 10vh;
+        margin-top: 2vh;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil > .skill > .icon {
+        background-color: #ffffff;
+        border-radius: 100px;
+        height: 10vh;
+        width: 10vh;
+        box-shadow: 4px 0px 15px #1D2532;
+        transition: color 0.6s ease-in-out;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil > .skill > .icon > svg {
+        height: 10vh;
+        width: auto;
+        scale: 0.7;
+        color: #1D2532;
+        transition: color 0.6s ease-in-out;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil > .skill > .name {
+        position: relative;
+        left: 1vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #skill > .content {
+        background-color: #E4E3E3;
+        height: fit-content;
+    }
+    
+    #skill > .content > .info {
+        display: flex;
+        flex-direction: column;
+        padding: 13vh 10vw 5vh 10vw;
+    }
+    
+    #skill > .content > .info > .text {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        margin: 0vh 1vw 1vh 1vw;
+        padding: 0vh 1vw 1vh 0vw;
+    }
+    
+    #skill > .content > .info > .text > .title {
+        font-size: 3vw;
+        color: #1D2532;
+        transition: color 0.6s ease-in-out;
+        margin-bottom: 2vh;
+        text-align: center;
+    }
+    
+    #skill > .content > .info > .text > .projet {
+        justify-self: center;
+    }
+    
+    #skill > .content > .info > .text > .projet > a {
+        font-size: 3vw;
+        font-style: italic;
+        color: #E4E3E3;
+        padding: 1vh 2vw 1vh 2vw;
+        background-color: #1D2532;
+        box-shadow: 0px 5px 0px #afb2b7;
+        border-radius: 1000px;
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+    }
+    
+    #skill > .content > .info > .text > .projet > a:hover {
+        background-color: #E4E3E3;
+        border: solid 1px #1D2532;
+        color: #1D2532;
+    }
+    
+    #skill > .content > .info > .text > .projet > a:active {
+        position: relative;
+        top: 2px;
+        color: white;
+        background-color: #373737;
+        box-shadow: 0px 3px 0px #afb2b7;
+    }
+    
+    #skill > .content > .info > .skill {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #skill > .content > .info > .skill > .box {
+        display: flex;
+        flex-direction: column;
+        background-color: #E4E3E3;
+        border: solid 2px #1D2532;
+        box-shadow: 0px 0px 1px #1D2532;
+        margin: 1vh;
+        padding: 1vh;
+        border-radius: 20px;
+        transition: all 0.5s linear;
+    }
+    
+    #skill > .content > .info > .skill > .box:hover {
+        border: solid 2px #E4E3E3;
+        box-shadow: 0px 0px 10px #1D2532;
+    }
+    
+    #skill > .content > .info > .skill > .box > .text {
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        font-size: 3vw;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil {
+        padding-bottom: 2vh;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil > .skill {
+        display: flex;
+        align-items: center;
+        color: #E4E3E3;
+        background-color: #1D2532;
+        border-radius: 100px;
+        height: 10vw;
+        margin-top: 2vh;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil > .skill > .icon {
+        background-color: #ffffff;
+        border-radius: 100px;
+        height: 10vw;
+        width: 10vw;
+        box-shadow: 4px 0px 15px #1D2532;
+        transition: color 0.6s ease-in-out;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil > .skill > .icon > svg {
+        height: 10vw;
+        width: auto;
+        scale: 0.7;
+        color: #1D2532;
+        transition: color 0.6s ease-in-out;
+    }
+    
+    #skill > .content > .info > .skill > .box > .outil > .skill > .name {
+        position: relative;
+        left: 3vw;
+        font-size: 2vw;
+    }
 }

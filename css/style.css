@@ -16,17 +16,30 @@ html {
     Xanh : #1D2532
 **/
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /** Header **/
 
 header {
-    position: sticky;
-    top: 0px;
-    width: 100vw;
-    z-index: 1;
-    border-bottom: solid 1px #ffffff;
-    box-shadow: 0px 5px 40px #1D2532;
-    background-color: #1D2532;
+    position: fixed;
+    background-color: #ffffffa0;
+    height: fit-content;
+    width: 80vw;
+    z-index: 3;
+    margin-top: 1vw;
+    border: solid 1px #ffffff;
+    border-radius: 100px;
+    align-self: center;
+    box-shadow: 0px 5px 15px #1D2532;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header:hover {
+    background-color: #ffffffd8;
 }
 
 header > nav {
@@ -34,18 +47,16 @@ header > nav {
     grid-template-columns: 1fr 5fr 1fr;
     justify-items: center;
     align-items: center;
-    background-color: #1D2532;
 }
 
 header > nav > .logo > a > img {
     height: 5vh;
-    margin: 1vh 0vw;
-    filter: drop-shadow(1px 0px 2px black);
-    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    scale: 0.8;
+    filter: drop-shadow(1px 1px 3px #1D2532);
 }
 
 header > nav > .logo > a > img:hover {
-    scale: 1.1;
+    scale: 0.9;
 }
 
 header > nav > .navi {
@@ -57,7 +68,7 @@ header > nav > .navi > a {
     text-decoration: none;
     margin: 0vh 3vw;
     padding: 1vh 1vw;
-    color: #E4E3E3;
+    color: #1D2532;
     position: relative;
     display: block;
 }
@@ -67,7 +78,7 @@ header > nav > .navi > a::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #E4E3E3;
+    background-color: #1D2532;
     transform: scaleX(0);
     height: 2px;
     width: 100%;
@@ -75,7 +86,7 @@ header > nav > .navi > a::after {
 }
 
 header > nav > .navi > a:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 header > nav > .navi > a:hover::after {
@@ -83,6 +94,7 @@ header > nav > .navi > a:hover::after {
     transform: scaleX(1);
 }
 
+header > nav > .lang {}
 
 .dropbtn {
     background-color: #E4E3E3;
@@ -97,11 +109,12 @@ header > nav > .navi > a:hover::after {
 }
 
 .dropbtn:hover {
-    background-color: #ffffff;
+    background-color: #1D2532;
+    color: #E4E3E3;
 }
 
 .dropbtn:active {
-    background-color: #1D2532;
+    background-color: #ffffff;
 }
 
 .dropdown-content {
@@ -130,4 +143,263 @@ header > nav > .navi > a:hover::after {
     background-color: #1D2532;
     width: 7vw;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    header {
+        position: fixed;
+        background-color: #ffffffa0;
+        height: fit-content;
+        width: fit-content;
+        padding: 0px 1vw;
+        z-index: 3;
+        margin-top: 1vw;
+        border: solid 1px #ffffff;
+        border-radius: 100px;
+        align-self: center;
+        box-shadow: 0px 5px 15px #1D2532;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    header:hover {
+        background-color: #ffffffd8;
+    }
+    
+    header > nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header > nav > .logo > a > img {
+        height: 5vh;
+        scale: 0.8;
+        filter: drop-shadow(1px 1px 3px #1D2532);
+    }
+    
+    header > nav > .logo > a > img:hover {
+        scale: 0.9;
+    }
+    
+    header > nav > .navi {
+        display: flex;
+    }
+    
+    header > nav > .navi > a {
+        font-size: 2.5vh;
+        text-decoration: none;
+        margin: 0vh 2vw;
+        padding: 1vh 0.2vw;
+        color: #1D2532;
+        position: relative;
+        display: block;
+    }
+    
+    header > nav > .navi > a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #1D2532;
+        transform: scaleX(0);
+        height: 2px;
+        width: 100%;
+        transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    header > nav > .navi > a:hover {
+        color: #000000;
+    }
+    
+    header > nav > .navi > a:hover::after {
+        font-weight: bold;
+        transform: scaleX(1);
+    }
+    
+    header > nav > .lang {}
+    
+    .dropbtn {
+        background-color: #E4E3E3;
+        width: fit-content;
+        color: #1D2532;
+        font-size: auto;
+        padding: 0.3vh 1vw 0.3vh 1vw; 
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    .dropbtn:hover {
+        background-color: #1D2532;
+        color: #E4E3E3;
+    }
+    
+    .dropbtn:active {
+        background-color: #ffffff;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 8vw;
+        justify-items: center;
+        background-color: #ffffff;
+        min-width: 100px;
+        z-index: 1;
+        margin-top: 1vh;
+        border-radius: 10px;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 1vh 1vw;
+        text-decoration: none;
+        display: block;
+        justify-items: center;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .dropdown-content a:hover {
+        color: #E4E3E3;
+        background-color: #1D2532;
+        width: 7vw;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        position: fixed;
+        background-color: #ffffffa0;
+        height: fit-content;
+        width: fit-content;
+        padding: 0px 2vw;
+        z-index: 3;
+        margin-top: 4vw;
+        border: solid 1px #ffffff;
+        border-radius: 10px;
+        align-self: center;
+        box-shadow: 0px 5px 15px #1D2532;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    header:hover {
+        background-color: #ffffffd8;
+    }
+    
+    header > nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+            "logo lang"
+            "navi navi";
+    }
+    
+    header > nav > .logo {
+        grid-area: logo;
+    }
+
+    
+    header > nav > .logo > a > img {
+        height: 3.5vh;
+        scale: 0.8;
+        filter: drop-shadow(1px 1px 3px #1D2532);
+    }
+    
+    header > nav > .logo > a > img:hover {
+        scale: 0.9;
+    }
+    
+    header > nav > .navi {
+        display: flex;
+        grid-area: navi;
+    }
+    
+    header > nav > .navi > a {
+        font-size: 1.8vh;
+        text-decoration: none;
+        margin: 0vh 2vw;
+        padding: 1vh 0.2vw;
+        color: #1D2532;
+        position: relative;
+        display: block;
+    }
+    
+    header > nav > .navi > a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #1D2532;
+        transform: scaleX(0);
+        height: 2px;
+        width: 100%;
+        transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    header > nav > .navi > a:hover {
+        color: #000000;
+    }
+    
+    header > nav > .navi > a:hover::after {
+        font-weight: bold;
+        transform: scaleX(1);
+    }
+    
+    header > nav > .lang {
+        grid-area: lang;
+    }
+    
+    .dropbtn {
+        background-color: #E4E3E3;
+        width: fit-content;
+        color: #1D2532;
+        font-size: 1.5vh;
+        padding: 0.3vh 2vw 0.3vh 2vw; 
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    .dropbtn:hover {
+        background-color: #1D2532;
+        color: #E4E3E3;
+    }
+    
+    .dropbtn:active {
+        background-color: #ffffff;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 8vw;
+        justify-items: center;
+        background-color: #ffffff;
+        min-width: 100px;
+        z-index: 1;
+        margin-top: 1vh;
+        border-radius: 10px;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 1vh 1vw;
+        text-decoration: none;
+        display: block;
+        justify-items: center;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .dropdown-content a:hover {
+        color: #E4E3E3;
+        background-color: #1D2532;
+        width: 7vw;
+        border-radius: 10px;
+    }
 }

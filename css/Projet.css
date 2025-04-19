@@ -2,7 +2,11 @@ body {
     background-color: #E4E3E3;
 }
 
-body > .box {
+section {
+    margin-top: 10vh;
+}
+
+section > .box {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     align-items: start;
@@ -13,80 +17,281 @@ body > .box {
     border-bottom: solid 1px #1D2532;
 }
 
-body > .box:hover {
+section > .box:hover {
     border-bottom: solid 3px #1D2532;
 }
 
-body > .box > h1 {
+section > .box > h1 {
     align-self: start;
     font-size: 5vh;
 }
 
-body > .box > .descript > h2 {
+section > .box > .descript > h2 {
     font-size: 3.5vh;
     margin-bottom: 2vh;
 }
 
-body > .box > .descript > p {
+section > .box > .descript > p {
     font-size: 2.5vh;
     line-height: 4vh;
     margin-bottom: 4vh;
 }
 
-body > .box > .image {
+section > .box > .image {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 1vw;
 }
 
-body > .box > .image > .outil {
+section > .box > .image > .outil {
     margin-bottom: 2vh;
 }
 
-body > .box > .descript {
+section > .box > .descript {
 
 }
 
-body > .box > .image > .produit {
+section > .box > .image > .produit {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-body > .box > .image > .produit > img {
+section > .box > .image > .produit > img {
     width: 14vw;    
     transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     scale: 0.8;
-    border-radius: 10px;
-    padding: 10px;
     border-radius: 50%;
+    padding: 10px;
     background-color: #E4E3E3;
 }
 
-body > .box > .image:hover  img:not(:hover) {
+section > .box > .image:hover  img:not(:hover) {
     filter: grayscale(0.8);
 }
 
-body > .box > .image > .produit > img:hover {
+section > .box > .image > .produit > img:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 30px #1D2532;
 }
 
-body > .box > .image > .outil > svg {
+section > .box > .image > .outil > svg {
     margin: 0vh 1vw;
 }
 
-body > .box > .image > .produit > .SQL {
+section > .box > .image > .produit > .SQL {
     width: 40vw;
     border-radius: 0;
 }
 
-body > .box > .image:hover  img:not(:hover) {
+section > .box > .image:hover  img:not(:hover) {
     filter: grayscale(0.8);
 }
 
-body > .box > .image > .produit > img:hover {
+section > .box > .image > .produit > img:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 30px #1D2532;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: #E4E3E3;
+    }
+    
+    section {
+        margin-top: 10vh;
+    }
+    
+    section > .box {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        margin: 2vh 2vw;
+        padding: 5vh 2vw;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        height: fit-content;
+        border-bottom: solid 1px #1D2532;
+    }
+    
+    section > .box:hover {
+        border-bottom: solid 3px #1D2532;
+    }
+    
+    section > .box > h1 {
+        align-self: start;
+        font-size: 5vh;
+    }
+    
+    section > .box > .descript > h2 {
+        font-size: 3.5vh;
+        margin-bottom: 2vh;
+    }
+    
+    section > .box > .descript > p {
+        font-size: 2.5vh;
+        line-height: 4vh;
+        margin-bottom: 4vh;
+    }
+    
+    section > .box > .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1vw;
+    }
+    
+    section > .box > .image > .outil {
+        margin-bottom: 2vh;
+    }
+    
+    section > .box > .descript {
+    
+    }
+    
+    section > .box > .image > .produit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section > .box > .image > .produit > img {
+        width: 20vw;  
+        height: auto;  
+        transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        scale: 0.8;
+        border-radius: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #E4E3E3;
+    }
+    
+    section > .box > .image:hover  img:not(:hover) {
+        filter: grayscale(0.8);
+    }
+    
+    section > .box > .image > .produit > img:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 30px #1D2532;
+    }
+    
+    section > .box > .image > .outil > svg {
+        margin: 0vh 1vw;
+        width: 20vw;
+    }
+    
+    section > .box > .image > .produit > .SQL {
+        width: 40vw;
+        border-radius: 0;
+    }
+    
+    section > .box > .image:hover  img:not(:hover) {
+        filter: grayscale(0.8);
+    }
+    
+    section > .box > .image > .produit > img:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 30px #1D2532;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #E4E3E3;
+    }
+    
+    section {
+        margin-top: 10vh;
+    }
+    
+    section > .box {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        margin: 2vh 2vw;
+        padding: 5vh 2vw;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        height: fit-content;
+        border-bottom: solid 1px #1D2532;
+    }
+    
+    section > .box:hover {
+        border-bottom: solid 3px #1D2532;
+    }
+    
+    section > .box > h1 {
+        align-self: start;
+        font-size: 100vw;
+    }
+    
+    section > .box > .descript > h2 {
+        font-size: 5vw;
+        margin-bottom: 2vh;
+    }
+    
+    section > .box > .descript > p {
+        font-size: 2vh;
+        line-height: 3vh;
+        margin-bottom: 2vh;
+    }
+    
+    section > .box > .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1vw;
+    }
+    
+    section > .box > .image > .outil {
+        margin-bottom: 2vh;
+    }
+    
+    section > .box > .descript {
+    
+    }
+    
+    section > .box > .image > .produit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section > .box > .image > .produit > img {
+        width: 40vw;  
+        height: auto;  
+        transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        scale: 0.8;
+        border-radius: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #E4E3E3;
+    }
+    
+    section > .box > .image:hover  img:not(:hover) {
+        filter: grayscale(0.8);
+    }
+    
+    section > .box > .image > .produit > img:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 30px #1D2532;
+    }
+    
+    section > .box > .image > .outil > svg {
+        margin: 0vh 1vw;
+        width: 15vw;
+    }
+    
+    section > .box > .image > .produit > .SQL {
+        width: 70vw;
+        border-radius: 0;
+    }
+    
+    section > .box > .image:hover  img:not(:hover) {
+        filter: grayscale(0.8);
+    }
+    
+    section > .box > .image > .produit > img:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 30px #1D2532;
+    }
 }
