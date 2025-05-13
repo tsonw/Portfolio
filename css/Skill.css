@@ -11,7 +11,7 @@
 
 #skill > .content > .info > .text {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     align-items: center;
     margin: 0vh 1vw 1vh 1vw;
     padding: 0vh 1vw 1vh 0vw;
@@ -33,6 +33,7 @@
     font-style: italic;
     color: #E4E3E3;
     padding: 1vh 2vw 1vh 2vw;
+    margin-left: 1vw;
     background-color: #1D2532;
     box-shadow: 0px 5px 0px #afb2b7;
     border-radius: 1000px;
@@ -133,7 +134,7 @@
     
     #skill > .content > .info > .text {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         align-items: center;
         margin: 0vh 1vw 1vh 1vw;
         padding: 0vh 1vw 1vh 0vw;
@@ -203,6 +204,10 @@
         padding-top: 2vh;
         padding-bottom: 2vh;
     }
+
+    #skill > .content > .info > .skill > .box > .text > h1 {
+        font-size: 3vw;
+    }
     
     #skill > .content > .info > .skill > .box > .outil {
         padding-bottom: 2vh;
@@ -214,21 +219,24 @@
         color: #E4E3E3;
         background-color: #1D2532;
         border-radius: 100px;
-        height: 10vh;
-        margin-top: 2vh;
+        height: 6vw;
+        margin-top: 3vw;
     }
     
     #skill > .content > .info > .skill > .box > .outil > .skill > .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #ffffff;
         border-radius: 100px;
-        height: 10vh;
-        width: 10vh;
+        height: 8vw;
+        width: 8vw;
         box-shadow: 4px 0px 15px #1D2532;
         transition: color 0.6s ease-in-out;
     }
     
     #skill > .content > .info > .skill > .box > .outil > .skill > .icon > svg {
-        height: 10vh;
+        height: 7vw;
         width: auto;
         scale: 0.7;
         color: #1D2532;
@@ -238,7 +246,7 @@
     #skill > .content > .info > .skill > .box > .outil > .skill > .name {
         position: relative;
         left: 1vw;
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
 }
 

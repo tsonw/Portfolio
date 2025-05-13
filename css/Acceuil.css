@@ -15,20 +15,21 @@
     background-image: url("../image/avatarBG.svg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100vh;
+    height: 140vh;
+    width: 140vh;
     z-index: 0;
-    left: -50vh;
+    left: -75vh;
+    top: 0vh;
     transform: translateX(-50%);
     animation: spin 50s linear infinite;
 }
 
 @keyframes spin {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -115,7 +116,7 @@
         2px -2px 3px #1D2532,
         -2px 2px 3px#1D2532,
         2px 2px 3px#1D2532;
-    transition: color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #acceuil > .info > .text > h1 > i:hover {
